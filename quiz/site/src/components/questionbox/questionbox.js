@@ -1,14 +1,15 @@
+import './questionbox.scss'
 
 const QuestionBox = ({ currentQuestion, questions, onClick }) => {
     return (
-        <>
+        <div className='container'>
             <div className='question-section'>
                 <div className='question-count'>
                     <span>Questão {currentQuestion + 1}</span>/{questions.length}
                 </div>
 
                 <div className='question-text'>
-                    {questions[currentQuestion].pergunta}
+                    {questions[currentQuestion].question}
                 </div>
             </div>
 
@@ -24,7 +25,7 @@ const QuestionBox = ({ currentQuestion, questions, onClick }) => {
                     </button>
                 ))}
             </div>
-		</>
+		</div>
     )
 }
 

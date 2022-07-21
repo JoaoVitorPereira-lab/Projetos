@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Site from './site.js'
+import './index.scss';
+import Routes from './routes.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Site />
+    <Routes />
   </React.StrictMode>
 );

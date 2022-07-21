@@ -1,0 +1,36 @@
+.score-section{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .navs{
+      margin-top: 6em;
+   }
+
+   .link-1{
+      margin-bottom: 1em;
+   }
+
+   button{
+      font-family: "Dela Gothic One", cursive;
+      width: 100%;
+      font-size: 16px;
+      color: #000000;
+      background-color: #fff;
+      border-radius: 15px;
+      border: 5px solid #fff;
+      cursor: pointer;
+   }
+
+   button:hover {
+      background-color: #fff;
+      border-color: #fff;
+      color: #000;
+      transform: scale(1.05);
+      transition: all 0.5s;
+   }
+
+   button:focus {
+      outline: none;
+   }
+}

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import Score from './components/score.js'
-import QuestionBox from './components/questionbox.js'
+import Score from '../../components/score/score'
+import QuestionBox from '../../components/questionbox/questionbox'
+import './pf.scss'
 
 export default function App() {
 	
 	const questions = [
 		{
-			pergunta: 'Qual é o maior campeão da Liga dos Campeões?',
+			question: 'Qual é o maior campeão da Liga dos Campeões?',
 			answerOptions: [
 				{ answerText: 'Milan', isCorrect: false },
 				{ answerText: 'Ajax', isCorrect: false },
@@ -15,7 +16,7 @@ export default function App() {
 			],
 		},
 		{
-			pergunta: 'Quem é o maior campeão da Liga Europa?',
+			question: 'Quem é o maior campeão da Liga Europa?',
 			answerOptions: [
 				{ answerText: 'Sevilla', isCorrect: true },
 				{ answerText: 'Internacionalize', isCorrect: false },
@@ -24,7 +25,7 @@ export default function App() {
 			],
 		},
 		{
-			pergunta: 'Quem é o jogador que fez mais gols em uma edição de Copa do Mundo?',
+			question: 'Quem é o jogador que fez mais gols em uma edição de Copa do Mundo?',
 			answerOptions: [
 				{ answerText: 'Miroslav Klose', isCorrect: true },
 				{ answerText: 'Cristiano Ronaldo', isCorrect: false },
@@ -33,7 +34,7 @@ export default function App() {
 			],
 		},
 		{
-			pergunta: 'Quem é o maior goleador da história atualmente?',
+			question: 'Quem é o maior goleador da história atualmente?',
 			answerOptions: [
 				{ answerText: 'Cristiano Ronaldo', isCorrect: true },
 				{ answerText: 'Lionel Messi', isCorrect: false },
